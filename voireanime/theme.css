@@ -1,0 +1,108 @@
+/* ==UserStyle==
+@name           Voiranime.com DARK THEME
+@namespace      https://yolanare.github.io/page-styles/
+@version        1.5.0
+@description    Un thème sombre pour Voiranime.com
+@author         yolan.design
+@license        MIT
+==/UserStyle== */
+
+@-moz-document domain("voiranime.com"), domain("voirdrama.org") {
+    /*bg*/
+    body, *[style*="background-color:#fcfcfc"], .summary_content, .summary_image {
+        background: #212027 !important;
+        background-color: #212027 !important;
+        /*background: linear-gradient(to right, #1a1920 20%,#2e2d34);*/
+    }
+    
+    footer,
+    .btn-link:not(:hover), .chapter:not(:hover), .open-search-main-menu:not(:hover),
+    .nextpostslink:not(:hover), .previouspostslink:not(:hover), .wp-pagenavi span, html .wp-pagenavi .current,
+    .site-header .c-sub-header-nav,
+    .site-header .c-sub-header-nav .sub-menu,
+    .search-wrap .post-content {
+        background: #100f17 !important;
+        background-color: #100f17 !important;
+    }
+
+    footer,
+    .btn-link:not(:hover), .open-search-main-menu:not(:hover),
+    .nextpostslink:not(:hover), .previouspostslink:not(:hover), .wp-pagenavi span, html .wp-pagenavi .current,
+    .site-header .c-sub-header-nav,
+    .site-header .c-sub-header-nav .sub-menu,
+    a:not(:hover), h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5,
+    .score,
+    input:not([name*="phrase"]), textarea, label, .form-group span,
+    button:not([type="submit"]) {
+        color: #aaa !important;
+    }
+    
+    .c-blog__heading.style-3 > * {
+        color: #fff !important;
+    }
+    
+    a:hover, .c-tabs-content .active a, .c-blog__heading *:not([class^="h"]) .icon,
+    button:not([type="submit"]):hover {
+        color: #7289da !important;
+    }
+    
+    .c-tabs-content a::after,
+    .h4 .ion-checkmark, .h4 .ion-ios-star,
+    .c-blog__heading.style-3 {
+        background: #7289da !important;
+    }
+    .h4 .ion-checkmark::after, .h4 .ion-ios-star::after {
+        border-left-color: #7289da !important;
+        border-right-color: #7289da !important;
+    }
+    .c-blog__heading.style-3::after {
+        border-top-color: #7289da !important;
+        border-bottom-color: #7289da !important;
+    }
+    
+    footer,
+    .btn-link:not(:hover), .open-search-main-menu:not(:hover),
+    .nextpostslink:not(:hover), .previouspostslink:not(:hover), .wp-pagenavi span, html .wp-pagenavi .current,
+    .site-header .c-sub-header-nav,
+    .site-header .c-sub-header-nav .sub-menu {
+        border: none !important;
+    }
+    .site-header .c-sub-header-nav.sticky {
+        box-shadow: none;
+    }
+    
+    .with-border, .c-blog__heading, .page-listing-item {
+        border-color: #2e2d34 !important;
+    }
+    .c-genres-block .btn {
+        border-color: #aaa !important;
+    }
+    
+    *[style^="background-image: url(https://v5.voiranime.com/"] {
+        filter: invert(1) hue-rotate(180deg);
+    }
+    *[style^="background-image: url(https://v5.voiranime.com/"] > * {
+        filter: invert(1) hue-rotate(180deg);
+    }
+    
+    input:not([type="submit"]):not([name*="phrase"]), textarea, select {
+        filter: invert(1) hue-rotate(180deg) contrast(1.05);
+    }
+    
+    .asp_r, .asp_m {
+        filter: invert(1) hue-rotate(180deg) contrast(0.825) brightness(1.175);
+    }
+    .asp_r .asp_image, .asp_m .asp_image,
+    .asp_r a, .asp_m a {
+        filter: invert(1) hue-rotate(180deg) contrast(0.825) brightness(1.175);
+    }
+    .asp_r {
+        border: none !important;
+    }
+    /*.asp_r.asp_r_4, .asp_r.asp_r_4 .results .item {
+        background: #100f17 !important;
+    }
+    .asp_r.asp_r_4 .results {
+        scrollbar-color: #7289da #100f17 !important;
+    }*/
+}
