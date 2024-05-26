@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Voiranime.com DARK THEME
 @namespace      github.com/yolanare/page-styles/tree/main/voireanime
-@version        1.5.0
+@version        1.5.1
 @description    Un thème sombre pour Voiranime.com
 @author         yolan.design
 @homepageURL    https://github.com/yolanare/page-styles
@@ -35,7 +35,7 @@
     a:not(:hover), h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5,
     .score,
     input:not([name*="phrase"]), textarea, label, .form-group span,
-    button:not([type="submit"]) {
+    div > button {
         color: #aaa !important;
     }
     
@@ -44,7 +44,7 @@
     }
     
     a:hover, .c-tabs-content .active a, .c-blog__heading *:not([class^="h"]) .icon,
-    button:not([type="submit"]):hover {
+    div > button:hover {
         color: #7289da !important;
     }
     
@@ -73,6 +73,9 @@
         box-shadow: none;
     }
     
+    body.manga-page .page-content-listing.single-page .listing-chapters_wrap > ul.main.version-chap li::after, .shortcode-manga-chapters .listing-chapters_wrap > ul.main.version-chap li::after {
+        background-color: #2e2d34 !important;
+    }
     .with-border, .c-blog__heading, .page-listing-item {
         border-color: #2e2d34 !important;
     }
