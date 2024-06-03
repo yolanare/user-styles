@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Voiranime.com DARK THEME
 @namespace      github.com/yolanare/user-styles/tree/main/voireanime
-@version        1.5.2
+@version        1.5.3
 @description    Le thème sombre le plus avancé pour Voiranime.com
 @author         yolan.design
 @homepageURL    https://github.com/yolanare/user-styles
@@ -37,6 +37,10 @@
     input:not([name*="phrase"]), textarea, label, .form-group span,
     div > button {
         color: #aaa !important;
+    }
+    .wp-manga-chapter a:visited:not(:hover),
+    .asp_res_text {
+        color: #777 !important;
     }
     
     .c-blog__heading.style-3 > * {
@@ -97,7 +101,7 @@
     .asp_r, .asp_m {
         filter: invert(1) hue-rotate(180deg) contrast(0.825) brightness(1.175);
     }
-    .asp_r .asp_image, .asp_m .asp_image,
+    /*.asp_r .asp_image, .asp_m .asp_image,*/
     .asp_r a, .asp_m a {
         filter: invert(1) hue-rotate(180deg) contrast(0.825) brightness(1.175);
     }
@@ -110,4 +114,13 @@
     .asp_r.asp_r_4 .results {
         scrollbar-color: #7289da #100f17 !important;
     }*/
+    .probox button:hover svg {
+        fill: #7289da !important;
+    }
+    .probox .proclose:hover svg {
+        background-color: #7289da !important;
+    }
+    .probox svg {
+        transition: fill 0.2s ease, background-color 0.2s ease;
+    }
 }
