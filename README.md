@@ -8,7 +8,7 @@ free to use and edit, but just make sure to mention me, that's all, thanks :)
 
 [See my profile on UserStyles.world](https://userstyles.world/user/yolanare)
 
-## [voiranime.com](https://userstyles.world/style/16476/voiranime-com-dark-theme)
+## [Voiranime.com](https://userstyles.world/style/16476/voiranime-com-dark-theme)
 
 | ![Voiranime Home](./voireanime/voiranime-home.png) | ![Voiranime Player](./voireanime/voiranime-player.png) |
 :-:|:-:
