@@ -29,5 +29,3 @@ free to use and edit, but just make sure to mention me, that's all, thanks :)
 ## VSCode theme: [Dark Ruby Theme](https://github.com/yolanare/vscode-dark-ruby-theme)
 
 ![VSCode Dark Ruby Theme](https://yolanare.github.io/vscode-dark-ruby-theme/showcase/showcase1.jpg)
-
----
