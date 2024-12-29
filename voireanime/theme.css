@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Voiranime.com Better Dark
 @namespace      github.com/yolanare/user-styles/tree/main/voireanime
-@version        1.5.3
+@version        1.5.4
 @description    Le thème sombre le plus avancé de Voiranime.com et qui suit la charte graphique du site.
 @author         yolan.design
 @homepageURL    https://github.com/yolanare/user-styles
@@ -10,7 +10,7 @@
 ==/UserStyle== */
 
 @-moz-document domain("voiranime.com"), domain("voirdrama.org") {
-    /*bg*/
+    /*- bg -*/
     body, *[style*="background-color:#fcfcfc"], .summary_content, .summary_image {
         background: #212027 !important;
         background-color: #212027 !important;
@@ -19,12 +19,17 @@
     
     footer,
     .btn-link:not(:hover), .chapter:not(:hover), .open-search-main-menu:not(:hover),
-    .nextpostslink:not(:hover), .previouspostslink:not(:hover), .wp-pagenavi span, html .wp-pagenavi .current,
+    .nextpostslink:not(:hover), .previouspostslink:not(:hover),
     .site-header .c-sub-header-nav,
     .site-header .c-sub-header-nav .sub-menu,
-    .search-wrap .post-content {
+    .search-wrap .post-content,
+    .wp-pagenavi > a:not(:hover) {
         background: #100f17 !important;
         background-color: #100f17 !important;
+    }
+    .wp-pagenavi > a:hover {
+        background: #1a1920 !important;
+        background-color: #1a1920 !important;
     }
 
     footer,
@@ -39,11 +44,14 @@
         color: #aaa !important;
     }
     .wp-manga-chapter a:visited:not(:hover),
-    .asp_res_text {
+    .asp_res_text,
+    .breadcrumb > li > a:not(:hover),
+    .breadcrumb > li::before {
         color: #777 !important;
     }
     
-    .c-blog__heading.style-3 > * {
+    .c-blog__heading.style-3 > *,
+    .wp-pagenavi > a:hover {
         color: #fff !important;
     }
     
@@ -68,7 +76,7 @@
     
     footer,
     .btn-link:not(:hover), .open-search-main-menu:not(:hover),
-    .nextpostslink:not(:hover), .previouspostslink:not(:hover), .wp-pagenavi span, html .wp-pagenavi .current,
+    .nextpostslink:not(:hover), .previouspostslink:not(:hover),
     .site-header .c-sub-header-nav,
     .site-header .c-sub-header-nav .sub-menu {
         border: none !important;
@@ -87,10 +95,10 @@
         border-color: #aaa !important;
     }
     
-    *[style^="background-image: url(https://v5.voiranime.com/"] {
+    *[style^="background-image: url(https://v"][style*="voir"][style*=".com/"] {
         filter: invert(1) hue-rotate(180deg);
     }
-    *[style^="background-image: url(https://v5.voiranime.com/"] > * {
+    *[style^="background-image: url(https://v"][style*="voir"][style*=".com/"] > * {
         filter: invert(1) hue-rotate(180deg);
     }
     
@@ -122,5 +130,41 @@
     }
     .probox svg {
         transition: fill 0.2s ease, background-color 0.2s ease;
+    }
+    
+    .open-search-main-menu i::before {
+        transform: rotateZ(0deg);
+        transition: 0.5s ease !important;
+    }
+    .open-search-main-menu.search-open i::before {
+        transform: rotateZ(360deg) !important;
+        color: #7289da !important;
+    }
+    
+    
+    .btn-link,
+    .wp-pagenavi > *:not(.current) {
+        border-radius: 6px !important;
+        transition: 0.2s ease !important;
+        transition-property: color, background-color !important;
+    }
+    
+    /*- page navigation -*/
+    .wp-pagenavi > *:not(.current) {
+        padding: 4px 6px !important;
+        border: none !important;
+    }
+    .wp-pagenavi > span {
+        background: transparent !important;
+        background-color: transparent !important;
+    }
+    .wp-pagenavi > .current {
+        border: 0px solid #7289da !important;
+        border-bottom-width: 2px !important;
+    }
+    .wp-pagenavi > .pages {
+        margin-right: 1em;
+        font-weight: 500;
+        color: #777 !important;
     }
 }
