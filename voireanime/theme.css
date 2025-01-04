@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Voiranime.com Better Dark
 @namespace      github.com/yolanare/user-styles/tree/main/voireanime
-@version        1.5.4
+@version        1.5.5
 @description    Le thème sombre le plus avancé de Voiranime.com et qui suit la charte graphique du site.
 @author         yolan.design
 @homepageURL    https://github.com/yolanare/user-styles
@@ -150,8 +150,11 @@
     }
     
     /*- page navigation -*/
+    .wp-pagenavi > * {
+        padding: 4px 8px !important;
+        margin: 2px !important;
+    }
     .wp-pagenavi > *:not(.current) {
-        padding: 4px 6px !important;
         border: none !important;
     }
     .wp-pagenavi > span {
@@ -163,7 +166,7 @@
         border-bottom-width: 2px !important;
     }
     .wp-pagenavi > .pages {
-        margin-right: 1em;
+        margin-right: 1em !important;
         font-weight: 500;
         color: #777 !important;
     }
