@@ -9,7 +9,7 @@
 @license        MIT
 ==/UserStyle== */
 
-@-moz-document domain("voiranime.com"), domain("voirdrama.org") {
+@-moz-document regexp("^https?:\\/\\/(.+\\.)?voiranime\\..+$") {
     /*- bg -*/
     body, *[style*="background-color:#fcfcfc"], .summary_content, .summary_image {
         background: #212027 !important;
