@@ -6,7 +6,7 @@ free to use and edit, but just make sure to mention me, that's all, thanks :)
 
 # web styles
 
-[See my profile on UserStyles.world](https://userstyles.world/user/yolanare)
+[See on my UserStyles.world profile](https://userstyles.world/user/yolanare)
 
 ## [Voiranime.com](https://userstyles.world/style/16476/voiranime-com-dark-theme)
 
@@ -20,7 +20,7 @@ free to use and edit, but just make sure to mention me, that's all, thanks :)
 
 <br>
 
-# other styles
+<details><summary>Deprecated</summary>
 
 ## Discord theme: [midnight blurple](https://github.com/yolanare/midnight-discord-blurple)
 
@@ -29,3 +29,5 @@ free to use and edit, but just make sure to mention me, that's all, thanks :)
 ## VSCode theme: [Dark Ruby Theme](https://github.com/yolanare/vscode-dark-ruby-theme)
 
 ![VSCode Dark Ruby Theme](https://yolanare.github.io/vscode-dark-ruby-theme/showcase/showcase1.jpg)
+
+</details>
